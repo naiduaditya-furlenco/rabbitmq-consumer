@@ -18,3 +18,7 @@ jobs:
             echo '^^^That should look familiar^^^'
             
             
+workflows:
+  rabbitmq-consumer-$CIRCLE_BRANCH:
+    jobs:
+      - build # checkout, build, test, and upload test results
