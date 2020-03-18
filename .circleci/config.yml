@@ -19,6 +19,6 @@ jobs:
             
             
 workflows:
-  rabbitmq-consumer-$CIRCLE_BRANCH:
+  rabbitmq-consumer-{$CIRCLE_BRANCH}:
     jobs:
       - build # checkout, build, test, and upload test results
