@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: alpine:3.7
+      - image: java:8-alpine
     steps:
       - checkout
       - run:
