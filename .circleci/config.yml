@@ -1,7 +1,4 @@
 version: 2.1
-
-orbs:
-  maven: circleci/maven@0.0.8
   
 jobs:
   build:
@@ -19,10 +16,3 @@ jobs:
           command: |
             ls -al
             echo '^^^That should look familiar^^^'
-
-
-
-workflows:
-  maven_test:
-    jobs:
-      - build # checkout, build, test, and upload test results
