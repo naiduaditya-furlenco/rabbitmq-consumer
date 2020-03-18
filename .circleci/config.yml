@@ -19,10 +19,6 @@ jobs:
           command: |
             ls -al
             echo '^^^That should look familiar^^^'
-      - run: 
-          name: Maven Build
-          command: |
-            mvn clean install 
 
 
 workflows:
