@@ -19,9 +19,3 @@ jobs:
           command: |
             ls -al
             echo '^^^That should look familiar^^^'
-
-
-workflows:
-  maven_test:
-    jobs:
-      - build # checkout, build, test, and upload test results
